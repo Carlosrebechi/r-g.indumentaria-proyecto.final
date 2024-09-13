@@ -1,0 +1,92 @@
+//Card
+
+.card-container{
+    /*a la section le agrego flex. de esta forma las ubico de manera horizontal*/ 
+    display: flex;
+    justify-content: space-between;
+    margin:  20px 40px 20px 40px;
+    .card{
+        width: 300px;
+        background-color: #a6cfdb;
+        border-radius: 8px;
+    }
+    .card img{
+        width: 100%;
+        height: auto;
+    }
+    .card-text{
+        /*A los textos los ubico uno debajo del otro con flex*/
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 16px;
+    }
+    
+    .card-text h3{
+        font-size: 24px;
+    }
+    .card-text p{
+        font-size: 16px;
+    }
+    .card-text a{
+        padding: 16px;
+        background-color: #201a1a;
+        border-radius: 4px;
+        color: #f0f0f0;
+    }   
+}
+
+h2 {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-orange;
+}
+
+    $temporada: verano;
+
+    .final {
+        height: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    
+    @if $temporada == verano {
+        background: url("../imagenes/puedes-mas-imagina.webp");
+        background-size: cover;
+       h5 {
+        color: rgb(23, 74, 118);
+        font-size: 80px;
+        position: relative;
+        span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 800px;
+            height: 800px;
+            border-radius: 100%;
+            filter: blur(10px);
+        }
+       } 
+
+        } @else if $temporada == invierno {
+            background: url("../Imagenes/Bendita\ la\ vida.webp");
+            background-size: cover;
+        h5 {
+            color: rgb(28, 28, 130);
+            font-size: 800px;
+        }
+        }
+        
+        @else {
+            background-color: #191919;
+        }
+    
+    }
+
+
+
+

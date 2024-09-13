@@ -1,0 +1,30 @@
+
+.box {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200vh;
+    background-color: #f0f0f0;
+    width: 1500px;
+    height: 600%;
+    background-color: #3498db;
+    animation: moveAndChange 3s infinite;
+}
+
+/* Definición de la animación */
+@keyframes moveAndChange {
+    0% {
+        transform: translateX(0);
+        background-color: #49b1f6;
+    }
+    50% {
+        transform: translateX(200px);
+        background-color: #d46053;
+    }
+    100% {
+        transform: translateX(0);
+        background-color: #3498db;
+    }
+}
