@@ -419,11 +419,11 @@ h2 {
 @keyframes moveAndChange {
   0% {
     transform: translateX(0);
-    background-color: #3498db;
+    background-color: #49b1f6;
   }
   50% {
     transform: translateX(200px);
-    background-color: #ee6859;
+    background-color: #e36254;
   }
   100% {
     transform: translateX(0);
